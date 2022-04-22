@@ -116,11 +116,11 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2>Hugo心得<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    <h2>Hugo心得
     </h2>
   </header>
   <section class="entry-content">
-    <p>安裝hugo 創建一個hugo site $ hugo new site hugo-web 套用主題 $ cd hugo-web // 先把hugo-web納入git，等等會再指定他的origin到github的repo $ git init // 透過submodule的功能，將theme的repo導入指定的主題路徑 $ git submodule add https://github.com/adityatelange/hugo-PaperMod.git themes/papermod // 在config.toml裡註明要使用的theme $ echo theme = \&#34;papermod\&#34; &gt;&gt; config.toml 在本機上運行hugo server $ cd hugo-web $ hugo server -D  這裡遇到一個問題，當在chrome裡拜訪 http://localhost:1313/ 時，會遇到ERR_SSL_PROTOCOL_ERROR錯誤，chrome老是會去訪問https，後來發現只要把cache清掉即可正常訪問 -D的意思是顯示目前draft=true的文章  把hugo-web上傳到github $ cd hugo-web $ git add . $ git commit -m &#34;My first commit for hugo blog&#34; // 新增遠端版本庫(origin) $ git remote add origin https://github....</p>
+    <p>安裝hugo  https://github.com/gohugoio/hugo/releases 下載對應作業系統提供的最新版 視主題的情況可能要下載hugo_extended的版本 以Windows為例，將下載下來的zip解壓縮到C:\hugo，再把路徑(C:\hugo)加到環境變數的Path底下  創建一個hugo site $ hugo new site hugo-web 套用主題 $ cd hugo-web // 先把hugo-web納入git，等等會再指定他的origin到github的repo $ git init // 透過submodule的功能，將theme的repo導入指定的主題路徑 $ git submodule add https://github.com/adityatelange/hugo-PaperMod.git themes/papermod // 在config.toml裡註明要使用的theme $ echo theme = \&#34;papermod\&#34; &gt;&gt; config.toml 在本機上運行hugo server $ cd hugo-web $ hugo server -D  這裡遇到一個問題，當在chrome裡拜訪 http://localhost:1313/ 時，會遇到ERR_SSL_PROTOCOL_ERROR錯誤，chrome老是會去訪問https，後來發現只要把cache清掉即可正常訪問 -D的意思是顯示目前draft=true的文章  把hugo-web上傳到github $ cd hugo-web $ git add . $ git commit -m &#34;My first commit for hugo blog&#34; // 新增遠端版本庫(origin) $ git remote add origin https://github....</p>
   </section>
   <footer class="entry-footer"><span title='2022-04-22 13:14:49 +0800 CST'>April 22, 2022</span></footer>
   <a class="entry-link" aria-label="post link to Hugo心得" href="https://chiakie.github.io/post/hugo-exp/"></a>
